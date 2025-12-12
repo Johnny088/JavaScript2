@@ -1,0 +1,18 @@
+body {
+  background-color: lightblue;
+}
+.container {
+  background-color: beige;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrap {
+  margin: 0 auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+}
