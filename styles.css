@@ -14,3 +14,24 @@
   padding: 8px 20px;
   border-radius: 10px;
 }
+/* ------------------------------ task3 ----------------------------------------- */
+.colors_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 72px;
+
+  gap: 16px;
+}
+.wrap__color {
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+}
+.template__color {
+  width: 30px;
+  height: 30px;
+}
+.description {
+  flex-grow: 1;
+  text-align: center;
+}

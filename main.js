@@ -25,9 +25,18 @@ registerForm.addEventListener('submit', e => {
 
 // ---------------------------task 3 -------------------
 const newColor = document.getElementById('form__colors');
-newColor = addEventListener('submit', e => {
-  e.defaultPrevented();
+newColor.addEventListener('submit', e => {
+  e.preventDefault();
   const r = e.target.red.value;
   const g = e.target.green.value;
   const b = e.target.blue.value;
+  newElement(r, g, b);
 });
+
+const newElement = function (r, g, b) {
+  const boxColors = document.getElementById('box__colors');
+  boxColors.innerHTML += `<div class="wrap__color mt-5 col-3">
+          <div class="template__color" style='background-color: rgb(${r},${g},${b})'></div>
+          <div class="description">RGB (${r},${g},${b})</div>
+        </div>`;
+};
