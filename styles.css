@@ -2,3 +2,15 @@
   background-color: beige;
   width: 600px;
 }
+.btn__color {
+  top: 64px;
+  right: 600px;
+  background: linear-gradient(
+    45deg,
+    rgb(97, 219, 97),
+    rgb(202, 38, 38),
+    rgb(66, 66, 226)
+  );
+  padding: 8px 20px;
+  border-radius: 10px;
+}
