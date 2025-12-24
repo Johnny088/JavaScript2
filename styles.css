@@ -3,16 +3,33 @@ body {
 }
 .container {
   background-color: beige;
-  width: 60%;
   margin: 0 auto;
   text-align: center;
-}
-.wrap {
-  margin: 0 auto;
 }
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 200px;
+}
+
+.color__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 72px;
+  gap: 16px;
+}
+.color_item {
+  background-color: #101010;
+}
+
+.spotlight {
+  font-size: 16px;
+  font-weight: bold;
+  color: darkcyan;
+}
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
 }
