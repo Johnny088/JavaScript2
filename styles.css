@@ -1,0 +1,19 @@
+body {
+  background-color: lightblue;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form {
+  background-color: beige;
+  padding: 20px;
+}
+
+table,
+td,
+tr {
+  border: solid 1px black;
+}
+table {
+  width: 100%;
+}
