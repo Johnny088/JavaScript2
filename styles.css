@@ -1,3 +1,24 @@
 body {
   background-color: rgb(88, 85, 85);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tImput {
+  width: 50px;
+}
+
+button {
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: linear-gradient(
+    40deg,
+    rgb(106, 212, 106),
+    rgb(59, 59, 226),
+    rgb(238, 238, 21)
+  );
+  cursor: pointer;
+}
+.timeout {
+  color: brown;
 }
