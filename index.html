@@ -25,8 +25,21 @@
           <input type="number" class="tImput" id="minutes" min="1" />
           <input type="number" class="tImput" id="seconds" min="0" />
           <button onclick="setTimer()" type="button">set timer</button>
+          <button type="button" id="stopBtn">stop timer</button>
         </div>
         <p id="timeout" class="timeout"></p>
+      </div>
+      <div class="mb-5">
+        <div>
+          <h2 class="mb-2">Stopwatch</h2>
+          <input type="number" class="tImput" id="min" />
+          <input type="number" class="tImput" id="sec" />
+          <input type="number" class="tImput" id="ms" />
+          <button onclick="startStopwatch()" type="button">start timer</button>
+          <button type="button" id="stopBtnWatch">stop timer</button>
+          <button type="button" id="clearBtnWatch">clear timer</button>
+        </div>
+        <li id="record"></li>
       </div>
     </div>
     <script
