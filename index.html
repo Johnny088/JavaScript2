@@ -9,83 +9,47 @@
   </head>
   <body>
     <main>
+      <header>
+        <div class="container form">
+          <div id="city">city</div>
+          <form class="form__input">
+            <input type="text" placeholder="city" />
+            <img src="./images/search.svg" alt="" class="subBtn" id="subBtn" />
+          </form>
+        </div>
+      </header>
       <section>
-        <div class="container">
+        <div class="container" id="errorCase">
           <nav class="nav__menu" id="nav__menu">
             <button class="nav__btn" id="today__btn">Today</button>
             <button class="nav__btn" id="five__day__btn">5-day forecast</button>
           </nav>
+          <div class="weather__title">
+            <h2>Current weather</h2>
+            <p class="data" id="data">data</p>
+          </div>
+
           <div class="weather__hero">
-            <div class="weather__current">
-              <h2 class="weather__title">Current weather</h2>
-              <img src="" alt="icon" id="current_icon" />
-              <p id="state"></p>
-            </div>
-            <div class="weather__degrees">
-              <h2 id="degree" class="degree"></h2>
-              <p class="degree__like" id="degree__like"></p>
-            </div>
-            <div class="weather__time" id="weather__time">
-              <p class="sunrise" id="sunrise">sunrise</p>
-              <p class="sunset" id="sunset">sunset</p>
-              <p class="duration" id="duration">duration</p>
-            </div>
+            <ul class="current__weather">
+              <li id="current_icon"></li>
+              <li id="state"></li>
+            </ul>
+            <ul class="weather__degrees">
+              <li id="degree" class="degree"></li>
+              <li class="degree__like" id="degree__like"></li>
+            </ul>
+            <ul class="weather__time" id="weather__time">
+              <li class="sunrise" id="sunrise"></li>
+              <li class="sunset" id="sunset"></li>
+              <li class="duration" id="duration">duration</li>
+            </ul>
           </div>
         </div>
       </section>
       <section>
         <div class="container">
           <h2 class="hourly">Hourly</h2>
-          <ul class="weather__hourly" id="weather__hourly">
-            <li>
-              <p>7pm</p>
-              <img src="" alt="icon" />
-              <p>state</p>
-              <p>degree</p>
-              <p>feels</p>
-              <p>wind</p>
-            </li>
-            <li>
-              <p>8pm</p>
-              <img src="" alt="icon" />
-              <p>state</p>
-              <p>degree</p>
-              <p>feels</p>
-              <p>wind</p>
-            </li>
-            <li>
-              <p>9pm</p>
-              <img src="" alt="icon" />
-              <p>state</p>
-              <p>degree</p>
-              <p>feels</p>
-              <p>wind</p>
-            </li>
-            <li>
-              <p>10pm</p>
-              <img src="" alt="icon" />
-              <p>state</p>
-              <p>degree</p>
-              <p>feels</p>
-              <p>wind</p>
-            </li>
-            <li>
-              <p>11pm</p>
-              <img src="" alt="icon" />
-              <p>state</p>
-              <p>degree</p>
-              <p>feels</p>
-              <p>wind</p>
-            </li>
-            <li>
-              <p>12pm</p>
-              <img src="" alt="icon" />
-              <p>state</p>
-              <p>degree</p>
-              <p>feels</p>
-              <p>wind</p>
-            </li>
-          </ul>
+          <ul class="weather__hourly" id="weather__hourly"></ul>
         </div>
       </section>
     </main>
