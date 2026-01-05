@@ -10,18 +10,20 @@ const successPosition = function (position) {
 };
 
 const errorPosition = function (error) {
-  const url = 'http://ip-api.com/json';
+  // const url = 'http://ip-api.com/json';
+  const url = 'https://ipapi.co/json';
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      const { lat, lon } = data;
+      const { latitude: lat, longitude: lon } = data;
+      // const { lat, lon } = data;
       setUserCity(lat, lon);
     })
     .catch(error => console.error(error));
 };
 
 const setUserCity = function (latitude, longitude) {
-  const url = `http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&appid=${key}`;
+  const url = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&appid=${key}`;
   const city = document.getElementById('city');
   fetch(url)
     .then(response => response.json())
@@ -39,7 +41,7 @@ const setUserCity = function (latitude, longitude) {
 
 // -------------------------------------------- get Forecats -----------------------------------------
 const getWeather = function (lat, lon) {
-  const hourlyURL = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}`;
+  const hourlyURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}`;
   const weatherBox = document.getElementById('weather__hourly');
   weatherBox.innerHTML = `<li class="item">
               <p>Today</p>
@@ -103,7 +105,7 @@ const currentWeather = function (icon, state, temp, feel, lat, lon) {
 };
 
 const currentData = function (sunrise, sunset, duration, lat, lon) {
-  const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
 
   fetch(url)
     .then(response => response.json())
@@ -140,7 +142,7 @@ input.addEventListener('keydown', e => {
   }
 });
 const getWeatherByCity = function (city) {
-  const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${key}`;
+  const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${key}`;
   fetch(url)
     .then(response => response.json())
     .then(data => {
